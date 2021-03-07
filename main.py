@@ -15,18 +15,23 @@ class JustDoIt():
 
     def _move(self, x, y):
         self.behavor_flag = True
+        print("マウス操作を検出しました")
 
     def _click(self, x, y, button, pressed):
         self.behavor_flag = True
+        print("マウス操作を検出しました")
 
     def _scroll(self, x, y, dx, dy):
         self.behavor_flag = True
+        print("マウス操作を検出しました")
 
     def _press(self, key):
         self.behavor_flag = True
+        print("キーボード操作を検出しました")
 
     def _release(self, key):
         self.behavor_flag = True
+        print("キーボード操作を検出しました")
 
     def main(self):
         while True:
@@ -37,7 +42,7 @@ class JustDoIt():
                 
             if self.behavor_flag == False:
                 webbrowser.open("https://www.youtube.com/watch?v=nwW4CDGucVs")
-                continue
+                break
 
 
     def keyboard_listener_func(self):
