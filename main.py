@@ -9,28 +9,23 @@ import sys
 
 class JustDoIt():
     def __init__(self):
-        self.WAIT_TIME = 10
+        self.WAIT_TIME = 60
         self.behavor_flag = False
 
     def _move(self, x, y):
         self.behavor_flag = True
-        print("aaaaaaaa")
 
     def _click(self, x, y, button, pressed):
         self.behavor_flag = True
-        print("bbbbbbbbb")
 
     def _scroll(self, x, y, dx, dy):
         self.behavor_flag = True
-        print("cccccc")
 
     def _press(self, key):
         self.behavor_flag = True
-        print("dddddd")
 
     def _release(self, key):
         self.behavor_flag = True
-        print("eeeeeeeee")
 
     def main(self):
         while True:
